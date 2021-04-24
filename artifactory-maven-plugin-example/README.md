@@ -2,24 +2,16 @@
 
 ## Overview
 
-This example is using the Maven Artifactory Plugin for artifacts and build-info deployment to Artifactory. 
+This example is using the Maven Artifactory Plugin for artifacts abd build-info deployment to Artifactory. 
 
 ## Running this example
 
 To run this example, please do the following:
 * Edit the pom.xml file and set the value of the *contextUrl* with your Artifactory URL, as well as the other Artifactory properties.
 For more configuration information see the [Maven Artifactory Plugin documentation](https://www.jfrog.com/confluence/display/RTF/Maven+Artifactory+Plugin).
-* CD to the project directory and run *mvn deploy*.
-
-You can define the Artifactory details inside the pom file using properties. These properties can be sent to maven as system properties: 
+* CD to the project directory and run the following command (replace *admin* and *password* with your Artifactory credentials):
 ```console
-mvn deploy -Dusername=admin -Dpassword=password -Dbuildnumber=1
-```
-
-Alternatively they can be defined in the settings xml as described [here](https://maven.apache.org/examples/injecting-properties-via-settings.html).
-
-```console
-mvn deploy -Dbuildnumber=1 -s settings.xml
+> mvn deploy -Dusername=admin -Dpassword=password
 ```
 
 This would deploy the produced artifacts to the configured Artifactory server:
@@ -48,7 +40,3 @@ properties are sent as shown above.
 ## Plugin documentation
 
 The full plugin documentation is available [here](https://www.jfrog.com/confluence/display/RTF/Maven+Artifactory+Plugin).
-
-<br><br>
-
-For more information about managing your maven packages with an [Artifactory Maven repository](https://jfrog.com/integration/maven-repository/) visit [Artifactory's documentation page](https://www.jfrog.com/confluence/display/RTF/Maven+Repository).

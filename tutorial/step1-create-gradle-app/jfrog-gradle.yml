@@ -1,0 +1,11 @@
+version: 1
+type: gradle
+usePlugin: false
+useWrapper: true
+resolver:
+  repo: gradle-remote
+  serverID: artifactory
+deployer:
+  repo: gradle-demo-dev-local
+  serverID: artifactory
+  deployMavenDescriptors: true

@@ -1,13 +1,14 @@
 {
-  "name": "npm-example",
-  "version": "0.0.3",
-  "scripts": {
-    "start": "node helloworld"
-  },
+  "name": "hello-jenkins",
+  "description": "hello jenkins test app",
+  "version": "0.0.1",
+  "private": true,
   "dependencies": {
-    "send": "^0.16.2"
+    "express": "3.12.0"
   },
   "devDependencies": {
-    "debug": "^4.1.1"
+    "mocha": "1.20.1",
+    "supertest": "0.13.0"
   }
 }
+

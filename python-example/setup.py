@@ -1,14 +1,16 @@
-#!/usr/bin/env python
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
-from setuptools import setup
 
 setup(
-    name='jfrog-python-example',
-    version='1.0',
-    description='Project example for building Python project with JFrog products',
-    author='JFrog',
-    author_email='jfrog@jfrog.com',
-    url='https://github.com/jfrog/project-examples',
-    packages=['pythonExample'],
-    install_requires=['PyYAML>3.11', 'nltk'],
+    description="An example of how to create and publish to pypi.org",
+    author="Michal Reuven",
+    author_email="michal@jfrog.com",
+    url="http://localhost:8081/artifactory/api/pypi/pypi-local/simple",
+    version="0.1",
+    install_requires=["nose",],
+    packages=["pythonProj","tests",],
+    name="pythonProj",
 )

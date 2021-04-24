@@ -1,7 +1,0 @@
-{
-	"auths": {
-		"DOCKER_REG_URL": {
-			"auth": "USER-NAME:PASSWORD"
-		}
-	}
-}
